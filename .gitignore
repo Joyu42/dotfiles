@@ -1,0 +1,54 @@
+# --- macOS 系统文件 ---
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+.TemporaryItems
+
+# --- 敏感信息与密钥 (必须排除！) ---
+# 排除所有 SSH 私钥
+.ssh/id_rsa
+.ssh/id_ed25519
+.ssh/*.pub
+# 排除包含 history 的文件（防止泄露命令历史中的密码）
+.bash_history
+.zsh_history
+.lesshst
+.python_history
+.node_repl_history
+# 排除 gnupg keys
+.gnupg/
+# 排除 AWS/Cloud 凭证
+.aws/
+.azure/
+.gcp/
+
+# --- 编辑器临时文件 ---
+.vscode/
+!.vscode/settings.json
+!.vscode/keybindings.json
+!.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# --- 缓存与日志 ---
+.cache/
+.npm/
+.yarn/
+*.log
+
+# --- 本地特定配置 ---
+# 你可以创建一个 .extra 或 .local 文件来存放不想公开的机器特定配置
+.extra
+*.local
+.zshrc.local
+.gitconfig.local
+
+# --- 其他 ---
+node_modules/
+dist/
+build/
